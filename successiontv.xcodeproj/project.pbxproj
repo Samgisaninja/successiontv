@@ -7,23 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0085B8231E3D5F00707953 /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085B7231E3D5F00707953 /* DownloadViewController.m */; };
+		8D008600231E3EDD00707953 /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D0085BD231E3EDD00707953 /* LICENSE.md */; };
+		8D008601231E3EDD00707953 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085BF231E3EDD00707953 /* crypt.c */; };
+		8D008602231E3EDD00707953 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085C0231E3EDD00707953 /* unzip.c */; };
+		8D008603231E3EDD00707953 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085C1231E3EDD00707953 /* zip.c */; };
+		8D008604231E3EDD00707953 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085C2231E3EDD00707953 /* ioapi.c */; };
+		8D008605231E3EDD00707953 /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085CA231E3EDD00707953 /* inflate.c */; };
+		8D008606231E3EDD00707953 /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085CB231E3EDD00707953 /* compress.c */; };
+		8D008607231E3EDD00707953 /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085CC231E3EDD00707953 /* deflate.c */; };
+		8D008608231E3EDD00707953 /* gzread.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085CE231E3EDD00707953 /* gzread.c */; };
+		8D008609231E3EDD00707953 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085D1231E3EDD00707953 /* crc32.c */; };
+		8D00860A231E3EDD00707953 /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085D2231E3EDD00707953 /* infback.c */; };
+		8D00860B231E3EDD00707953 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085D3231E3EDD00707953 /* zutil.c */; };
+		8D00860C231E3EDD00707953 /* gzlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085D7231E3EDD00707953 /* gzlib.c */; };
+		8D00860D231E3EDD00707953 /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085D9231E3EDD00707953 /* inftrees.c */; };
+		8D00860E231E3EDD00707953 /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085DA231E3EDD00707953 /* uncompr.c */; };
+		8D00860F231E3EDD00707953 /* gzwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085DB231E3EDD00707953 /* gzwrite.c */; };
+		8D008610231E3EDD00707953 /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085DC231E3EDD00707953 /* trees.c */; };
+		8D008611231E3EDD00707953 /* gzclose.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085DD231E3EDD00707953 /* gzclose.c */; };
+		8D008612231E3EDD00707953 /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085DF231E3EDD00707953 /* inffast.c */; };
+		8D008613231E3EDD00707953 /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085E0231E3EDD00707953 /* adler32.c */; };
+		8D008614231E3EDD00707953 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8D0085E2231E3EDD00707953 /* README.md */; };
+		8D008615231E3EDD00707953 /* OZZipFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085E5231E3EDD00707953 /* OZZipFile.m */; };
+		8D008616231E3EDD00707953 /* NSDate+DOSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085E6231E3EDD00707953 /* NSDate+DOSDate.m */; };
+		8D008617231E3EDD00707953 /* OZFileInZipInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085EC231E3EDD00707953 /* OZFileInZipInfo.m */; };
+		8D008618231E3EDD00707953 /* OZZipReadStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085F2231E3EDD00707953 /* OZZipReadStream.m */; };
+		8D008619231E3EDD00707953 /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085FD231E3EDD00707953 /* NSData+CRC32.m */; };
+		8D00861A231E3EDD00707953 /* OZZipException.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085FE231E3EDD00707953 /* OZZipException.m */; };
+		8D00861B231E3EDD00707953 /* OZZipWriteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D0085FF231E3EDD00707953 /* OZZipWriteStream.m */; };
+		8D00861E231E419D00707953 /* DecryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D00861D231E419D00707953 /* DecryptViewController.m */; };
+		8D008621231E440400707953 /* RestoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D008620231E440400707953 /* RestoreViewController.m */; };
+		8D008624231E447B00707953 /* SpringBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D008623231E447B00707953 /* SpringBoardServices.framework */; };
+		8D008629231E458500707953 /* SpecialThanksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D008626231E458400707953 /* SpecialThanksTableViewController.m */; };
+		8D00862A231E458500707953 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D008628231E458400707953 /* SettingsTableViewController.m */; };
 		8D3E410D23176A6C0073B8B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E410C23176A6C0073B8B2 /* AppDelegate.m */; };
-		8D3E411023176A6C0073B8B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E410F23176A6C0073B8B2 /* ViewController.m */; };
 		8D3E411323176A6C0073B8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E411123176A6C0073B8B2 /* Main.storyboard */; };
 		8D3E411523176A6F0073B8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E411423176A6F0073B8B2 /* Assets.xcassets */; };
 		8D3E411823176A6F0073B8B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E411723176A6F0073B8B2 /* main.m */; };
+		8D631236231E3B0000F88E8B /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D631235231E3B0000F88E8B /* HomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0085B6231E3D5F00707953 /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		8D0085B7231E3D5F00707953 /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		8D0085BB231E3E1B00707953 /* NSTask.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTask.h; sourceTree = "<group>"; };
+		8D0085BD231E3EDD00707953 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		8D0085BF231E3EDD00707953 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		8D0085C0231E3EDD00707953 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		8D0085C1231E3EDD00707953 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		8D0085C2231E3EDD00707953 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		8D0085C3231E3EDD00707953 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		8D0085C4231E3EDD00707953 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		8D0085C5231E3EDD00707953 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		8D0085C6231E3EDD00707953 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		8D0085C8231E3EDD00707953 /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		8D0085C9231E3EDD00707953 /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		8D0085CA231E3EDD00707953 /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		8D0085CB231E3EDD00707953 /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = compress.c; sourceTree = "<group>"; };
+		8D0085CC231E3EDD00707953 /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = deflate.c; sourceTree = "<group>"; };
+		8D0085CD231E3EDD00707953 /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		8D0085CE231E3EDD00707953 /* gzread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzread.c; sourceTree = "<group>"; };
+		8D0085CF231E3EDD00707953 /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trees.h; sourceTree = "<group>"; };
+		8D0085D0231E3EDD00707953 /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		8D0085D1231E3EDD00707953 /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crc32.c; sourceTree = "<group>"; };
+		8D0085D2231E3EDD00707953 /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infback.c; sourceTree = "<group>"; };
+		8D0085D3231E3EDD00707953 /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		8D0085D4231E3EDD00707953 /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deflate.h; sourceTree = "<group>"; };
+		8D0085D5231E3EDD00707953 /* gzguts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gzguts.h; sourceTree = "<group>"; };
+		8D0085D6231E3EDD00707953 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		8D0085D7231E3EDD00707953 /* gzlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzlib.c; sourceTree = "<group>"; };
+		8D0085D8231E3EDD00707953 /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inflate.h; sourceTree = "<group>"; };
+		8D0085D9231E3EDD00707953 /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		8D0085DA231E3EDD00707953 /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = uncompr.c; sourceTree = "<group>"; };
+		8D0085DB231E3EDD00707953 /* gzwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzwrite.c; sourceTree = "<group>"; };
+		8D0085DC231E3EDD00707953 /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = trees.c; sourceTree = "<group>"; };
+		8D0085DD231E3EDD00707953 /* gzclose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gzclose.c; sourceTree = "<group>"; };
+		8D0085DE231E3EDD00707953 /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crc32.h; sourceTree = "<group>"; };
+		8D0085DF231E3EDD00707953 /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		8D0085E0231E3EDD00707953 /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		8D0085E1231E3EDD00707953 /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		8D0085E2231E3EDD00707953 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8D0085E4231E3EDD00707953 /* OZZipReadStream+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+NSError.h"; sourceTree = "<group>"; };
+		8D0085E5231E3EDD00707953 /* OZZipFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipFile.m; sourceTree = "<group>"; };
+		8D0085E6231E3EDD00707953 /* NSDate+DOSDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DOSDate.m"; sourceTree = "<group>"; };
+		8D0085E7231E3EDD00707953 /* OZZipWriteStream+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+Internals.h"; sourceTree = "<group>"; };
+		8D0085E8231E3EDD00707953 /* Objective-Zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Zip.h"; sourceTree = "<group>"; };
+		8D0085E9231E3EDD00707953 /* OZZipException+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipException+Internals.h"; sourceTree = "<group>"; };
+		8D0085EA231E3EDD00707953 /* OZZipWriteStream+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+NSError.h"; sourceTree = "<group>"; };
+		8D0085EB231E3EDD00707953 /* Objective-Zip+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Objective-Zip+NSError.h"; sourceTree = "<group>"; };
+		8D0085EC231E3EDD00707953 /* OZFileInZipInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZFileInZipInfo.m; sourceTree = "<group>"; };
+		8D0085ED231E3EDD00707953 /* OZZipWriteStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipWriteStream.h; sourceTree = "<group>"; };
+		8D0085EE231E3EDD00707953 /* OZZipException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipException.h; sourceTree = "<group>"; };
+		8D0085EF231E3EDD00707953 /* OZZipFile+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipFile+Standard.h"; sourceTree = "<group>"; };
+		8D0085F0231E3EDD00707953 /* NSData+CRC32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC32.h"; sourceTree = "<group>"; };
+		8D0085F1231E3EDD00707953 /* OZZipReadStream+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+Standard.h"; sourceTree = "<group>"; };
+		8D0085F2231E3EDD00707953 /* OZZipReadStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipReadStream.m; sourceTree = "<group>"; };
+		8D0085F3231E3EDD00707953 /* OZFileInZipInfo+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZFileInZipInfo+Internals.h"; sourceTree = "<group>"; };
+		8D0085F4231E3EDD00707953 /* OZZipFileMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipFileMode.h; sourceTree = "<group>"; };
+		8D0085F5231E3EDD00707953 /* OZZipReadStream+Internals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipReadStream+Internals.h"; sourceTree = "<group>"; };
+		8D0085F6231E3EDD00707953 /* OZZipFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipFile.h; sourceTree = "<group>"; };
+		8D0085F7231E3EDD00707953 /* NSDate+DOSDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DOSDate.h"; sourceTree = "<group>"; };
+		8D0085F8231E3EDD00707953 /* OZZipWriteStream+Standard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipWriteStream+Standard.h"; sourceTree = "<group>"; };
+		8D0085F9231E3EDD00707953 /* OZFileInZipInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZFileInZipInfo.h; sourceTree = "<group>"; };
+		8D0085FA231E3EDD00707953 /* OZZipCompressionLevel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipCompressionLevel.h; sourceTree = "<group>"; };
+		8D0085FB231E3EDD00707953 /* OZZipFile+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OZZipFile+NSError.h"; sourceTree = "<group>"; };
+		8D0085FC231E3EDD00707953 /* OZZipReadStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OZZipReadStream.h; sourceTree = "<group>"; };
+		8D0085FD231E3EDD00707953 /* NSData+CRC32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC32.m"; sourceTree = "<group>"; };
+		8D0085FE231E3EDD00707953 /* OZZipException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipException.m; sourceTree = "<group>"; };
+		8D0085FF231E3EDD00707953 /* OZZipWriteStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OZZipWriteStream.m; sourceTree = "<group>"; };
+		8D00861C231E419D00707953 /* DecryptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecryptViewController.h; sourceTree = "<group>"; };
+		8D00861D231E419D00707953 /* DecryptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecryptViewController.m; sourceTree = "<group>"; };
+		8D00861F231E440400707953 /* RestoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestoreViewController.h; sourceTree = "<group>"; };
+		8D008620231E440400707953 /* RestoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestoreViewController.m; sourceTree = "<group>"; };
+		8D008623231E447B00707953 /* SpringBoardServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpringBoardServices.framework; path = successiontv/SpringBoardServices.framework; sourceTree = "<group>"; };
+		8D008625231E458400707953 /* SpecialThanksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecialThanksTableViewController.h; sourceTree = "<group>"; };
+		8D008626231E458400707953 /* SpecialThanksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialThanksTableViewController.m; sourceTree = "<group>"; };
+		8D008627231E458400707953 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
+		8D008628231E458400707953 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
 		8D3E410823176A6C0073B8B2 /* successiontv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = successiontv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3E410B23176A6C0073B8B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D3E410C23176A6C0073B8B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		8D3E410E23176A6C0073B8B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8D3E410F23176A6C0073B8B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		8D3E411223176A6C0073B8B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D3E411423176A6F0073B8B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D3E411623176A6F0073B8B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D3E411723176A6F0073B8B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D631234231E3B0000F88E8B /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		8D631235231E3B0000F88E8B /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +141,122 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D008624231E447B00707953 /* SpringBoardServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0085BC231E3EDD00707953 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				8D0085BD231E3EDD00707953 /* LICENSE.md */,
+				8D0085BE231E3EDD00707953 /* MiniZip */,
+				8D0085C7231E3EDD00707953 /* ZLib */,
+				8D0085E2231E3EDD00707953 /* README.md */,
+				8D0085E3231E3EDD00707953 /* Objective-Zip */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		8D0085BE231E3EDD00707953 /* MiniZip */ = {
+			isa = PBXGroup;
+			children = (
+				8D0085BF231E3EDD00707953 /* crypt.c */,
+				8D0085C0231E3EDD00707953 /* unzip.c */,
+				8D0085C1231E3EDD00707953 /* zip.c */,
+				8D0085C2231E3EDD00707953 /* ioapi.c */,
+				8D0085C3231E3EDD00707953 /* crypt.h */,
+				8D0085C4231E3EDD00707953 /* zip.h */,
+				8D0085C5231E3EDD00707953 /* unzip.h */,
+				8D0085C6231E3EDD00707953 /* ioapi.h */,
+			);
+			path = MiniZip;
+			sourceTree = "<group>";
+		};
+		8D0085C7231E3EDD00707953 /* ZLib */ = {
+			isa = PBXGroup;
+			children = (
+				8D0085C8231E3EDD00707953 /* zutil.h */,
+				8D0085C9231E3EDD00707953 /* inftrees.h */,
+				8D0085CA231E3EDD00707953 /* inflate.c */,
+				8D0085CB231E3EDD00707953 /* compress.c */,
+				8D0085CC231E3EDD00707953 /* deflate.c */,
+				8D0085CD231E3EDD00707953 /* inffixed.h */,
+				8D0085CE231E3EDD00707953 /* gzread.c */,
+				8D0085CF231E3EDD00707953 /* trees.h */,
+				8D0085D0231E3EDD00707953 /* inffast.h */,
+				8D0085D1231E3EDD00707953 /* crc32.c */,
+				8D0085D2231E3EDD00707953 /* infback.c */,
+				8D0085D3231E3EDD00707953 /* zutil.c */,
+				8D0085D4231E3EDD00707953 /* deflate.h */,
+				8D0085D5231E3EDD00707953 /* gzguts.h */,
+				8D0085D6231E3EDD00707953 /* zlib.h */,
+				8D0085D7231E3EDD00707953 /* gzlib.c */,
+				8D0085D8231E3EDD00707953 /* inflate.h */,
+				8D0085D9231E3EDD00707953 /* inftrees.c */,
+				8D0085DA231E3EDD00707953 /* uncompr.c */,
+				8D0085DB231E3EDD00707953 /* gzwrite.c */,
+				8D0085DC231E3EDD00707953 /* trees.c */,
+				8D0085DD231E3EDD00707953 /* gzclose.c */,
+				8D0085DE231E3EDD00707953 /* crc32.h */,
+				8D0085DF231E3EDD00707953 /* inffast.c */,
+				8D0085E0231E3EDD00707953 /* adler32.c */,
+				8D0085E1231E3EDD00707953 /* zconf.h */,
+			);
+			path = ZLib;
+			sourceTree = "<group>";
+		};
+		8D0085E3231E3EDD00707953 /* Objective-Zip */ = {
+			isa = PBXGroup;
+			children = (
+				8D0085E4231E3EDD00707953 /* OZZipReadStream+NSError.h */,
+				8D0085E5231E3EDD00707953 /* OZZipFile.m */,
+				8D0085E6231E3EDD00707953 /* NSDate+DOSDate.m */,
+				8D0085E7231E3EDD00707953 /* OZZipWriteStream+Internals.h */,
+				8D0085E8231E3EDD00707953 /* Objective-Zip.h */,
+				8D0085E9231E3EDD00707953 /* OZZipException+Internals.h */,
+				8D0085EA231E3EDD00707953 /* OZZipWriteStream+NSError.h */,
+				8D0085EB231E3EDD00707953 /* Objective-Zip+NSError.h */,
+				8D0085EC231E3EDD00707953 /* OZFileInZipInfo.m */,
+				8D0085ED231E3EDD00707953 /* OZZipWriteStream.h */,
+				8D0085EE231E3EDD00707953 /* OZZipException.h */,
+				8D0085EF231E3EDD00707953 /* OZZipFile+Standard.h */,
+				8D0085F0231E3EDD00707953 /* NSData+CRC32.h */,
+				8D0085F1231E3EDD00707953 /* OZZipReadStream+Standard.h */,
+				8D0085F2231E3EDD00707953 /* OZZipReadStream.m */,
+				8D0085F3231E3EDD00707953 /* OZFileInZipInfo+Internals.h */,
+				8D0085F4231E3EDD00707953 /* OZZipFileMode.h */,
+				8D0085F5231E3EDD00707953 /* OZZipReadStream+Internals.h */,
+				8D0085F6231E3EDD00707953 /* OZZipFile.h */,
+				8D0085F7231E3EDD00707953 /* NSDate+DOSDate.h */,
+				8D0085F8231E3EDD00707953 /* OZZipWriteStream+Standard.h */,
+				8D0085F9231E3EDD00707953 /* OZFileInZipInfo.h */,
+				8D0085FA231E3EDD00707953 /* OZZipCompressionLevel.h */,
+				8D0085FB231E3EDD00707953 /* OZZipFile+NSError.h */,
+				8D0085FC231E3EDD00707953 /* OZZipReadStream.h */,
+				8D0085FD231E3EDD00707953 /* NSData+CRC32.m */,
+				8D0085FE231E3EDD00707953 /* OZZipException.m */,
+				8D0085FF231E3EDD00707953 /* OZZipWriteStream.m */,
+			);
+			path = "Objective-Zip";
+			sourceTree = "<group>";
+		};
+		8D008622231E447B00707953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D008623231E447B00707953 /* SpringBoardServices.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8D3E40FF23176A6C0073B8B2 = {
 			isa = PBXGroup;
 			children = (
 				8D3E410A23176A6C0073B8B2 /* successiontv */,
 				8D3E410923176A6C0073B8B2 /* Products */,
+				8D008622231E447B00707953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,12 +273,24 @@
 			children = (
 				8D3E410B23176A6C0073B8B2 /* AppDelegate.h */,
 				8D3E410C23176A6C0073B8B2 /* AppDelegate.m */,
-				8D3E410E23176A6C0073B8B2 /* ViewController.h */,
-				8D3E410F23176A6C0073B8B2 /* ViewController.m */,
+				8D00861C231E419D00707953 /* DecryptViewController.h */,
+				8D00861D231E419D00707953 /* DecryptViewController.m */,
+				8D0085B6231E3D5F00707953 /* DownloadViewController.h */,
+				8D0085B7231E3D5F00707953 /* DownloadViewController.m */,
+				8D631234231E3B0000F88E8B /* HomePageViewController.h */,
+				8D631235231E3B0000F88E8B /* HomePageViewController.m */,
 				8D3E411123176A6C0073B8B2 /* Main.storyboard */,
 				8D3E411423176A6F0073B8B2 /* Assets.xcassets */,
 				8D3E411623176A6F0073B8B2 /* Info.plist */,
 				8D3E411723176A6F0073B8B2 /* main.m */,
+				8D0085BB231E3E1B00707953 /* NSTask.h */,
+				8D00861F231E440400707953 /* RestoreViewController.h */,
+				8D008620231E440400707953 /* RestoreViewController.m */,
+				8D008627231E458400707953 /* SettingsTableViewController.h */,
+				8D008628231E458400707953 /* SettingsTableViewController.m */,
+				8D008625231E458400707953 /* SpecialThanksTableViewController.h */,
+				8D008626231E458400707953 /* SpecialThanksTableViewController.m */,
+				8D0085BC231E3EDD00707953 /* Objective-Zip */,
 			);
 			path = successiontv;
 			sourceTree = "<group>";
@@ -126,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D3E411523176A6F0073B8B2 /* Assets.xcassets in Resources */,
+				8D008600231E3EDD00707953 /* LICENSE.md in Resources */,
+				8D008614231E3EDD00707953 /* README.md in Resources */,
 				8D3E411323176A6C0073B8B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +366,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D3E411023176A6C0073B8B2 /* ViewController.m in Sources */,
+				8D00860F231E3EDD00707953 /* gzwrite.c in Sources */,
+				8D00860C231E3EDD00707953 /* gzlib.c in Sources */,
+				8D008602231E3EDD00707953 /* unzip.c in Sources */,
+				8D008610231E3EDD00707953 /* trees.c in Sources */,
 				8D3E411823176A6F0073B8B2 /* main.m in Sources */,
+				8D00860A231E3EDD00707953 /* infback.c in Sources */,
+				8D00861A231E3EDD00707953 /* OZZipException.m in Sources */,
+				8D008629231E458500707953 /* SpecialThanksTableViewController.m in Sources */,
+				8D008611231E3EDD00707953 /* gzclose.c in Sources */,
+				8D008608231E3EDD00707953 /* gzread.c in Sources */,
+				8D008619231E3EDD00707953 /* NSData+CRC32.m in Sources */,
+				8D008604231E3EDD00707953 /* ioapi.c in Sources */,
+				8D008612231E3EDD00707953 /* inffast.c in Sources */,
+				8D008615231E3EDD00707953 /* OZZipFile.m in Sources */,
+				8D00860E231E3EDD00707953 /* uncompr.c in Sources */,
+				8D008607231E3EDD00707953 /* deflate.c in Sources */,
 				8D3E410D23176A6C0073B8B2 /* AppDelegate.m in Sources */,
+				8D008618231E3EDD00707953 /* OZZipReadStream.m in Sources */,
+				8D0085B8231E3D5F00707953 /* DownloadViewController.m in Sources */,
+				8D008609231E3EDD00707953 /* crc32.c in Sources */,
+				8D00860B231E3EDD00707953 /* zutil.c in Sources */,
+				8D00860D231E3EDD00707953 /* inftrees.c in Sources */,
+				8D008621231E440400707953 /* RestoreViewController.m in Sources */,
+				8D008616231E3EDD00707953 /* NSDate+DOSDate.m in Sources */,
+				8D008603231E3EDD00707953 /* zip.c in Sources */,
+				8D00861E231E419D00707953 /* DecryptViewController.m in Sources */,
+				8D631236231E3B0000F88E8B /* HomePageViewController.m in Sources */,
+				8D008601231E3EDD00707953 /* crypt.c in Sources */,
+				8D008613231E3EDD00707953 /* adler32.c in Sources */,
+				8D008605231E3EDD00707953 /* inflate.c in Sources */,
+				8D00862A231E458500707953 /* SettingsTableViewController.m in Sources */,
+				8D008606231E3EDD00707953 /* compress.c in Sources */,
+				8D00861B231E3EDD00707953 /* OZZipWriteStream.m in Sources */,
+				8D008617231E3EDD00707953 /* OZFileInZipInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +531,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62PB6NV7YN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/successiontv",
+				);
 				INFOPLIST_FILE = successiontv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -281,6 +546,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samgisaninja.successiontv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -288,8 +554,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Launch Image";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 62PB6NV7YN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/successiontv",
+				);
 				INFOPLIST_FILE = successiontv/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +569,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.samgisaninja.successiontv;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Release;
 		};
