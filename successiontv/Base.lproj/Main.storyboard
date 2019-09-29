@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMm-ix-KX3">
-    <device id="appleTV" orientation="landscape">
-        <adaptation id="dark"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14865.1" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WMm-ix-KX3">
+    <device id="appleTV" appearance="dark"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,37 +21,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuccessionTV" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMP-Pu-m2S">
-                                <rect key="frame" x="734" y="195" width="452" height="86"/>
+                                <rect key="frame" x="734" y="255" width="452" height="86"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="72"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Vd-9F-c4w">
-                                <rect key="frame" x="418" y="381" width="191" height="46"/>
+                                <rect key="frame" x="418" y="441" width="188" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tvOS version" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RJq-yW-3In">
-                                <rect key="frame" x="391" y="437" width="218" height="46"/>
+                                <rect key="frame" x="391" y="497" width="214" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tvOS build number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSY-Pl-cCE">
-                                <rect key="frame" x="289" y="493" width="320" height="46"/>
+                                <rect key="frame" x="289" y="553" width="312" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Appletv5,3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riw-XO-TPo">
-                                <rect key="frame" x="1311" y="381" width="187" height="46"/>
+                                <rect key="frame" x="1311" y="441" width="187" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sh5-S2-SfK">
-                                <rect key="frame" x="1311" y="437" width="73" height="46"/>
+                                <rect key="frame" x="1309" y="497" width="75" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -66,16 +64,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16M568" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOL-9C-aOI">
-                                <rect key="frame" x="1311" y="493" width="144" height="46"/>
+                                <rect key="frame" x="1310" y="553" width="145" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTI-a2-CJj">
-                                <rect key="frame" x="629" y="569" width="662" height="69"/>
+                                <rect key="frame" x="639.5" y="629" width="641" height="69"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="If the information above is inaccurate, please click here"/>
+                                <connections>
+                                    <action selector="infoNotAccurateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nfe-a9-w0J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OBM-ac-Ecb">
                                 <rect key="frame" x="754" y="748" width="414" height="86"/>
@@ -84,16 +85,25 @@
                                 <state key="normal" title="Prepare for restore!">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="bXw-Yq-Mwi" kind="show" id="aYH-ap-tYW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT7-Ek-bzg">
-                                <rect key="frame" x="728" y="748" width="464" height="86"/>
+                                <rect key="frame" x="731.5" y="748" width="457" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Download a filesystem"/>
+                                <connections>
+                                    <segue destination="Lol-Fb-Q5u" kind="show" id="1Gm-jn-bLx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c25-L8-9Wc">
-                                <rect key="frame" x="849" y="934" width="223" height="86"/>
+                                <rect key="frame" x="850" y="934" width="220" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Settings"/>
+                                <connections>
+                                    <segue destination="stS-TJ-Zta" kind="show" id="aaw-Wb-LkP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -130,6 +140,13 @@
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
                     <navigationItem key="navigationItem" id="4dB-DA-3uV"/>
+                    <connections>
+                        <outlet property="deviceModelLabel" destination="riw-XO-TPo" id="YkR-qf-hYG"/>
+                        <outlet property="downloadDMGButton" destination="bT7-Ek-bzg" id="QeA-rO-sq8"/>
+                        <outlet property="iOSBuildLabel" destination="IOL-9C-aOI" id="cNR-Jd-fQ6"/>
+                        <outlet property="iOSVersionLabel" destination="Sh5-S2-SfK" id="jXZ-NQ-vID"/>
+                        <outlet property="prepareToRestoreButton" destination="OBM-ac-Ecb" id="JEa-JO-caj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -148,9 +165,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-nW-NfK">
-                                <rect key="frame" x="788" y="150" width="345" height="86"/>
+                                <rect key="frame" x="790.5" y="150" width="339" height="86"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Start Download"/>
+                                <connections>
+                                    <action selector="startDownloadButtonAction:" destination="Lol-Fb-Q5u" eventType="touchUpInside" id="lhc-Eu-ghy"/>
+                                </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BsM-zK-pwY">
                                 <rect key="frame" x="360" y="530" width="1200" height="20"/>
@@ -171,6 +191,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="Lol-Fb-Q5u" eventType="touchUpInside" id="NcS-vi-qPD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -184,6 +207,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hGq-Sm-RAU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="eHX-tY-6ae"/>
+                    <connections>
+                        <outlet property="activityLabel" destination="KA1-0w-xX6" id="2h3-C2-aa6"/>
+                        <outlet property="downloadProgressBar" destination="BsM-zK-pwY" id="CQm-ku-UWS"/>
+                        <outlet property="startDownloadButton" destination="3eM-nW-NfK" id="spp-iP-n0p"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LWr-hp-G61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -202,13 +231,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrytping..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iq5-iZ-hZp">
-                                <rect key="frame" x="849" y="150" width="222" height="46"/>
+                                <rect key="frame" x="851.5" y="150" width="217" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj7-NU-RyB">
-                                <rect key="frame" x="914" y="690" width="93" height="46"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj7-NU-RyB">
+                                <rect key="frame" x="914" y="724" width="92" height="46"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -218,9 +247,13 @@
                             <constraint firstItem="Dj7-NU-RyB" firstAttribute="centerX" secondItem="vXJ-oL-0vX" secondAttribute="centerX" id="3LP-cq-1dd"/>
                             <constraint firstItem="Iq5-iZ-hZp" firstAttribute="centerX" secondItem="vXJ-oL-0vX" secondAttribute="centerX" id="EsJ-2J-5Ir"/>
                             <constraint firstItem="Iq5-iZ-hZp" firstAttribute="top" secondItem="vXJ-oL-0vX" secondAttribute="top" constant="150" id="jQI-mw-CTM"/>
+                            <constraint firstItem="Cvy-oG-Qx7" firstAttribute="top" secondItem="Dj7-NU-RyB" secondAttribute="bottom" constant="250" id="q5q-H3-ckx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="end-N5-Oj3"/>
                     </view>
+                    <connections>
+                        <outlet property="activityLabel" destination="Dj7-NU-RyB" id="PWH-aM-uM8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rXP-4P-Lic" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -239,13 +272,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning!!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uqC-EX-T4S">
-                                <rect key="frame" x="848" y="60" width="224" height="58"/>
+                                <rect key="frame" x="848" y="205" width="224" height="58"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7f-92-bOZ">
-                                <rect key="frame" x="0.0" y="168" width="1920" height="92"/>
+                                <rect key="frame" x="0.0" y="313" width="1920" height="92"/>
                                 <string key="text">Running this tool will immediately delete all data from your device. Please make a backup of any data that you want to keep. This will also return your device to the setup screen.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
@@ -265,7 +298,17 @@
                                 <state key="normal" title="Erase Apple TV">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startRestoreButtonAction:" destination="bXw-Yq-Mwi" eventType="touchUpInside" id="0I3-ke-XUy"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RSYNC OUTPUT HERE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWn-Kp-PmB">
+                                <rect key="frame" x="0.0" y="659" width="1920" height="92"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="uqC-EX-T4S" firstAttribute="centerX" secondItem="s2F-ZM-fsG" secondAttribute="centerX" id="9Ba-FZ-M8F"/>
@@ -278,10 +321,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QpP-ee-1cE"/>
                     </view>
+                    <navigationItem key="navigationItem" id="CCS-V3-OPB"/>
+                    <connections>
+                        <outlet property="headerLabel" destination="uqC-EX-T4S" id="D2H-zm-Io1"/>
+                        <outlet property="infoLabel" destination="F7f-92-bOZ" id="q19-oH-XQZ"/>
+                        <outlet property="outputLabel" destination="oWn-Kp-PmB" id="m4K-Bc-llk"/>
+                        <outlet property="restoreProgressBar" destination="o13-1P-dEJ" id="sWR-4U-SQk"/>
+                        <outlet property="startRestoreButton" destination="SP3-Z9-saM" id="YGW-mY-FZ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pCX-lM-WGF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4280" y="2066"/>
+            <point key="canvasLocation" x="4280" y="2300"/>
         </scene>
         <!--Settings Table View Controller-->
         <scene sceneID="RBb-Wb-sfS">
@@ -292,10 +343,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="99q-PV-xUc">
-                                <rect key="frame" x="110" y="66" width="1700" height="66"/>
+                                <rect key="frame" x="106" y="66" width="1708" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="99q-PV-xUc" id="8tu-6J-Moi">
-                                    <rect key="frame" x="0.0" y="0.0" width="1700" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1708" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -305,6 +356,7 @@
                             <outlet property="delegate" destination="stS-TJ-Zta" id="DF9-zx-3Eh"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="kc2-En-UwC"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fa2-WX-CMm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,7 +368,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WMm-ix-KX3" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FMc-qK-VMj">
-                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <rect key="frame" x="0.0" y="60" width="1920" height="145"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -337,10 +389,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="creditsReuseIdentifier" id="dPJ-nE-bD0">
-                                <rect key="frame" x="110" y="66" width="1700" height="66"/>
+                                <rect key="frame" x="106" y="66" width="1708" height="66"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dPJ-nE-bD0" id="W1E-Pj-zrB">
-                                    <rect key="frame" x="0.0" y="0.0" width="1700" height="66"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1708" height="66"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
