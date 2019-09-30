@@ -11,7 +11,7 @@
 @interface SettingsTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableDictionary *successionPrefs;
-@property (nonatomic, strong) UISwitch *createAPFSsuccessionprerestoreSwitch;
-@property (nonatomic, strong) UISwitch *createAPFSorigfsSwitch;
+@property (nonatomic, strong) UISegmentedControl *createAPFSsuccessionprerestoreSwitch;
+@property (nonatomic, strong) UISegmentedControl *createAPFSorigfsSwitch;
 
 @end

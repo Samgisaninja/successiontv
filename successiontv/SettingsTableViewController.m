@@ -50,9 +50,9 @@
             cell.textLabel.text = @"Use test mode";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            UISwitch *dryRunSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+            UISegmentedControl *dryRunSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = dryRunSwitch;
-            [dryRunSwitch setOn:[[_successionPrefs objectForKey:@"dry-run"] boolValue] animated:FALSE];
+            [dryRunSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"dry-run"] boolValue]];
             [dryRunSwitch addTarget:self action:@selector(dryRunSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -60,9 +60,9 @@
             cell.textLabel.text = @"Only restore system data (similar to 'restore rootfs')";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            UISwitch *updateInstallSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+            UISegmentedControl *updateInstallSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = updateInstallSwitch;
-            [updateInstallSwitch setOn:[[_successionPrefs objectForKey:@"update-install"] boolValue] animated:NO];
+            [updateInstallSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"dry-run"] boolValue]];
             [updateInstallSwitch addTarget:self action:@selector(updateInstallSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -70,9 +70,9 @@
             cell.textLabel.text = @"Log output to /var/mobile/succession.log";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            UISwitch *logOutputSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+            UISegmentedControl *logOutputSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = logOutputSwitch;
-            [logOutputSwitch setOn:[[_successionPrefs objectForKey:@"log-file"] boolValue] animated:NO];
+            [logOutputSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"log-file"] boolValue]];
             [logOutputSwitch addTarget:self action:@selector(logFileSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -80,9 +80,9 @@
             cell.textLabel.text = @"Delete extraneous files during restore instead of after (for devices low on storage space)";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            UISwitch *deleteDuringSwitch = [[UISwitch alloc] initWithFrame:CGRectZero];
+            UISegmentedControl *deleteDuringSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = deleteDuringSwitch;
-            [deleteDuringSwitch setOn:[[_successionPrefs objectForKey:@"delete-during"] boolValue] animated:NO];
+            [deleteDuringSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"delete-during"] boolValue]];
             [deleteDuringSwitch addTarget:self action:@selector(deleteDuringSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -90,9 +90,9 @@
             cell.textLabel.text = @"Create APFS snapshot 'orig-fs' after restore (requires snappy from Bingner's repo and iOS 10.3 or higher)";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            _createAPFSorigfsSwitch = [[UISwitch alloc] init];
+            _createAPFSorigfsSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = _createAPFSorigfsSwitch;
-            [_createAPFSorigfsSwitch setOn:[[_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue] animated:FALSE];
+            [_createAPFSorigfsSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue]];
             [_createAPFSorigfsSwitch addTarget:self action:@selector(createAPFSorigfsSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -100,9 +100,9 @@
             cell.textLabel.text = @"Create APFS snapshot 'succession-prerestore' before restore for use with SnapBack to 'undo restore' (requires snappy from Bingner's repo and iOS 10.3 or higher)";
             cell.textLabel.numberOfLines = 0;
             [cell.textLabel sizeToFit];
-            _createAPFSsuccessionprerestoreSwitch = [[UISwitch alloc] init];
+            _createAPFSsuccessionprerestoreSwitch = [[UISegmentedControl alloc] initWithItems:[NSArray arrayWithObjects:@"OFF", @"ON", nil]];
             cell.accessoryView = _createAPFSsuccessionprerestoreSwitch;
-            [_createAPFSsuccessionprerestoreSwitch setOn:[[_successionPrefs objectForKey:@"create_APFS_succession-prerestore"] boolValue] animated:FALSE];
+            [_createAPFSsuccessionprerestoreSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"create_APFS_succession-prerestore"] boolValue]];
             [_createAPFSsuccessionprerestoreSwitch addTarget:self action:@selector(createAPFSsuccessionprerestoreSwitchChanged) forControlEvents:UIControlEventValueChanged];
             break;
         }
@@ -259,10 +259,11 @@
             [self->_successionPrefs setObject:@(0) forKey:@"create_APFS_succession-prerestore"];
             [[NSFileManager defaultManager] removeItemAtPath:@"/var/mobile/Library/Preferences/com.samgisaninja.SuccessionRestore.plist" error:nil];
             [self->_successionPrefs writeToFile:@"/var/mobile/Library/Preferences/com.samgisaninja.SuccessionRestore.plist" atomically:TRUE];
-            [self->_createAPFSsuccessionprerestoreSwitch setOn:[[self->_successionPrefs objectForKey:@"create_APFS_succession-prerestore"] boolValue] animated:TRUE];
+            [self->_createAPFSsuccessionprerestoreSwitch setSelectedSegmentIndex:[[self->_successionPrefs objectForKey:@"create_APFS_succession-prerestore"] boolValue]];
         }];
         UIAlertAction *dismissAction = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-            [self->_createAPFSorigfsSwitch setOn:[[self->_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue] animated:FALSE];
+            
+            [self->_createAPFSorigfsSwitch setSelectedSegmentIndex:[[self->_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue]];
         }];
         [apfsWarning addAction:continueAction];
         [apfsWarning addAction:dismissAction];
@@ -280,7 +281,7 @@
         [_successionPrefs setObject:@(0) forKey:@"create_APFS_orig-fs"];
         [[NSFileManager defaultManager] removeItemAtPath:@"/var/mobile/Library/Preferences/com.samgisaninja.SuccessionRestore.plist" error:nil];
         [_successionPrefs writeToFile:@"/var/mobile/Library/Preferences/com.samgisaninja.SuccessionRestore.plist" atomically:TRUE];
-        [_createAPFSorigfsSwitch setOn:[[_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue] animated:TRUE];
+        [_createAPFSorigfsSwitch setSelectedSegmentIndex:[[_successionPrefs objectForKey:@"create_APFS_orig-fs"] boolValue]];
     } else {
         [_successionPrefs setObject:@(0) forKey:@"create_APFS_succession-prerestore"];
         [[NSFileManager defaultManager] removeItemAtPath:@"/var/mobile/Library/Preferences/com.samgisaninja.SuccessionRestore.plist" error:nil];

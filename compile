@@ -1,0 +1,19 @@
+#!/bin/bash
+
+xcodebuild -target successiontv -xcconfig compile64.xcconfig -configuration Debug >> /dev/null
+mv ./build/Debug-appletvos/successiontv.app ./
+ldid -SSuccessionEntitlements.plist ./successiontv.app/successiontv
+ldid -SSuccessionEntitlements.plist ./successiontv.app/hdik
+rm -f ./successiontv.app/embedded.mobileprovision
+mkdir ./com.samgisaninja.successiontv
+cp -r ./Template/* ./com.samgisaninja.successiontv/
+mkdir com.samgisaninja.successiontv/Applications/
+mv successiontv.app com.samgisaninja.successiontv/Applications/
+sudo fakeroot chmod 6755 com.samgisaninja.successiontv/Applications/successiontv.app/successiontv
+sudo fakeroot chmod 0755 com.samgisaninja.successiontv/Applications/successiontv.app/hdik
+rm -rf ./Build
+rm -rf ./Index
+find . -type f -name .DS_Store -delete && xattr -cr *
+sudo fakeroot dpkg-deb -Zgzip -b com.samgisaninja.successiontv com.samgisaninja.successiontv.deb && rm -r com.samgisaninja.successiontv
+
+## Changes made by nobbele/4ppleCracker

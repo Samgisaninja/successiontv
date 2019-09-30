@@ -41,6 +41,10 @@
 		8D008624231E447B00707953 /* SpringBoardServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D008623231E447B00707953 /* SpringBoardServices.framework */; };
 		8D008629231E458500707953 /* SpecialThanksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D008626231E458400707953 /* SpecialThanksTableViewController.m */; };
 		8D00862A231E458500707953 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D008628231E458400707953 /* SettingsTableViewController.m */; };
+		8D3A3C352341803E0067F86D /* prerm in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A3C322341803D0067F86D /* prerm */; };
+		8D3A3C362341803E0067F86D /* postinst in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A3C332341803D0067F86D /* postinst */; };
+		8D3A3C372341803E0067F86D /* control in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A3C342341803D0067F86D /* control */; };
+		8D3A3C392341814E0067F86D /* hdik in Resources */ = {isa = PBXBuildFile; fileRef = 8D3A3C382341814E0067F86D /* hdik */; };
 		8D3E410D23176A6C0073B8B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D3E410C23176A6C0073B8B2 /* AppDelegate.m */; };
 		8D3E411323176A6C0073B8B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E411123176A6C0073B8B2 /* Main.storyboard */; };
 		8D3E411523176A6F0073B8B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D3E411423176A6F0073B8B2 /* Assets.xcassets */; };
@@ -125,6 +129,10 @@
 		8D008626231E458400707953 /* SpecialThanksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecialThanksTableViewController.m; sourceTree = "<group>"; };
 		8D008627231E458400707953 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		8D008628231E458400707953 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		8D3A3C322341803D0067F86D /* prerm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = prerm; sourceTree = "<group>"; };
+		8D3A3C332341803D0067F86D /* postinst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = postinst; sourceTree = "<group>"; };
+		8D3A3C342341803D0067F86D /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		8D3A3C382341814E0067F86D /* hdik */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = hdik; sourceTree = "<group>"; };
 		8D3E410823176A6C0073B8B2 /* successiontv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = successiontv.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3E410B23176A6C0073B8B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D3E410C23176A6C0073B8B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -251,9 +259,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8D3A3C302341803D0067F86D /* Template */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A3C312341803D0067F86D /* DEBIAN */,
+			);
+			path = Template;
+			sourceTree = "<group>";
+		};
+		8D3A3C312341803D0067F86D /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				8D3A3C322341803D0067F86D /* prerm */,
+				8D3A3C332341803D0067F86D /* postinst */,
+				8D3A3C342341803D0067F86D /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
 		8D3E40FF23176A6C0073B8B2 = {
 			isa = PBXGroup;
 			children = (
+				8D3A3C302341803D0067F86D /* Template */,
 				8D3E410A23176A6C0073B8B2 /* successiontv */,
 				8D3E410923176A6C0073B8B2 /* Products */,
 				8D008622231E447B00707953 /* Frameworks */,
@@ -279,6 +306,7 @@
 				8D0085B7231E3D5F00707953 /* DownloadViewController.m */,
 				8D631234231E3B0000F88E8B /* HomePageViewController.h */,
 				8D631235231E3B0000F88E8B /* HomePageViewController.m */,
+				8D3A3C382341814E0067F86D /* hdik */,
 				8D3E411123176A6C0073B8B2 /* Main.storyboard */,
 				8D3E411423176A6F0073B8B2 /* Assets.xcassets */,
 				8D3E411623176A6F0073B8B2 /* Info.plist */,
@@ -352,9 +380,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D3A3C352341803E0067F86D /* prerm in Resources */,
 				8D3E411523176A6F0073B8B2 /* Assets.xcassets in Resources */,
+				8D3A3C372341803E0067F86D /* control in Resources */,
 				8D008600231E3EDD00707953 /* LICENSE.md in Resources */,
+				8D3A3C392341814E0067F86D /* hdik in Resources */,
 				8D008614231E3EDD00707953 /* README.md in Resources */,
+				8D3A3C362341803E0067F86D /* postinst in Resources */,
 				8D3E411323176A6C0073B8B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
